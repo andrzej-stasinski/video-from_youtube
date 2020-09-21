@@ -1,0 +1,22 @@
+#header {
+	background-color: #eee;
+	width: 1000px; height: 100px; margin: 0 auto; font-size:36px;
+}
+#menu {
+	background-color: #cae4ff;
+	width: 1000px;	height: 36px;	margin: 0 auto;	
+}
+#menu a {
+	background-color: #d7f1ff;
+	float:left; padding: 8px 12px;	margin: 0 4px;	
+}
+#content {
+	clear:left; width: 1000px; margin: 20px auto; font-size:16px;
+}
+
+
+
+
+
+
+		

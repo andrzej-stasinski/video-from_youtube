@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>16 tutorial31</title>
+	<link id="pagestyle" rel="stylesheet" href="large.css">
+	<style>	
+	* {
+		margin:0;padding:0;
+	}
+	</style>
+	<script>
+
+	function layout() {
+		var styleLink = document.getElementById('pagestyle');
+		console.log('innerWidth = ' + this.innerWidth);
+		if(this.innerWidth < 600) {
+			styleLink.setAttribute("href", "mobile.css");
+		}
+		else if(this.innerWidth < 1000) {
+			styleLink.setAttribute("href", "medium.css");
+		}
+		else {
+			styleLink.setAttribute("href", "large.css");
+		}		
+	}
+
+	window.onresize = layout;
+	layout();
+	</script>
+</head>
+<body>
+	<h2>16 Responsive Layout for mobile</h2>
+
+	<div id="header"></div>	
+	<div id="menu">
+		<a href="#">Home</a>
+		<a href="#">Services</a>
+		<a href="#">Project</a>
+		<a href="#">Contact</a>	
+	</div>
+	
+	<div id="content">	
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore accusantium, assumenda natus, tempora sint tenetur facere sed eos officiis dolor eveniet necessitatibus sequi velit alias temporibus laboriosam recusandae sapiente molestias?</div>
+		<div>Debitis accusamus dicta molestiae ducimus, deleniti dolor. Libero consectetur vero consequuntur voluptatibus cumque, necessitatibus, nesciunt harum delectus molestias accusamus quo! Quia iure, enim sequi sint optio quaerat. Animi, quidem, consectetur.</div>
+		<div>Nihil, ullam obcaecati eius, saepe perspiciatis, repellat dolor sunt quidem deserunt dicta neque repudiandae nemo numquam officiis fugiat, soluta laudantium porro modi delectus quia voluptas rem ab illum aperiam! Hic.</div>
+		<div>Perferendis aspernatur minima nisi fugiat est dicta consequuntur magnam fuga accusantium ab, similique nam reiciendis esse, neque repellendus. Reiciendis aperiam, obcaecati ad eaque incidunt. Debitis architecto qui, fugit aliquam vero?</div>
+		<div>Explicabo natus ducimus, autem reiciendis amet quaerat laudantium quas quam. Corrupti iure nobis illo beatae. Ad placeat, maxime natus consequuntur voluptatem fugiat molestias, pariatur vel, quae excepturi, repellat ab? Minima?</div>
+	</div>
+
+
+</body>
+</html>
